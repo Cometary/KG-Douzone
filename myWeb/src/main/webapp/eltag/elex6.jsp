@@ -13,6 +13,5 @@
 <head><title>EL 함수 호출</title></head>
 <body>
 오늘은 <b>${elfunc:dateFormat(today) }</b> 입니다.
-
 </body>
 </html>
