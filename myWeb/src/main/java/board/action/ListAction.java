@@ -35,12 +35,12 @@ public class ListAction implements CommandAction {
 		}
 		number = count - (currentPage - 1) * pageSize;// 글목록에 표시할 글번호 
 		//해당 뷰에서 사용할 속성
-		request.setAttribute("currentPage", new Integer(currentPage));
-		request.setAttribute("startRow", new Integer(startRow));
-		request.setAttribute("endRow", new Integer(endRow));
-		request.setAttribute("count", new Integer(count));
-		request.setAttribute("pageSize", new Integer(pageSize));
-		request.setAttribute("number", new Integer(number));
+		request.setAttribute("currentPage", currentPage);
+		request.setAttribute("startRow", startRow);
+		request.setAttribute("endRow", endRow);
+		request.setAttribute("count", count);
+		request.setAttribute("pageSize", pageSize);
+		request.setAttribute("number", number);
 		request.setAttribute("articleList", articleList);
 		return "/board/list.jsp";// 해당 뷰
 	}
