@@ -57,6 +57,7 @@ public class BoardDAO {
 		return x;
 	}
 
+	
 	// 글 목록을 얻어 와서 List형태로 리턴
 	public List<BoardVO> getArticles(int start, int end) {
 		Connection conn = null;
