@@ -112,8 +112,6 @@ public class BoardDAO {
 		return articleList;
 	}
 
-	
-	// 글 저장
 	// 글 저장
 	public void insertArticle(BoardVO article) {
 		Connection conn = null;
